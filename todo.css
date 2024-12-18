@@ -1,0 +1,116 @@
+#input {
+    display: grid;
+    place-items: center;
+    font-size: xx-large;
+    text-align: left;
+    background-color: antiquewhite;
+    color: green;
+    width: 50%;
+    height: 20px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#button {
+    text-align: center;
+    font-size: xx-large;
+    background-color: #ccc;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#buttonDiv {
+    text-align: center;
+}
+
+#header {
+    font-size: xx-large;
+    text-align: center;
+    color: #6b6969;
+}
+
+#container {
+    list-style: none;
+    width: 70%;
+    margin: auto;
+    
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(253, 241, 226);
+    font-size: xx-large;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0.5px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.delete-btn {
+    background-color: rgb(253, 241, 226);
+    color: rgb(15, 15, 15);
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+li {
+    text-align: left; /* Սկզբնական դիրքում թողնել */
+}
+span{
+    text-align: left;
+}
+
+li:active{
+    background-color: #ccc;
+}
+li.checked span {
+    text-decoration: line-through; /* Գիծ քաշել միայն տեքստի վրա */
+    color: gray; /* Տեքստի գույնը */
+    text-align: left;
+}
+
+/* Պտիչկան (checkmark) */
+li.checked::before {
+    content: "\2713"; /* Պտիչկա */
+    color: green; /* Պտիչկայի գույն */
+    margin-right: 10px; /* Տեքստից հեռավորություն */
+    font-size: 20px; /* Պտիչկայի չափ */
+    
+}
+
+    
+
+.checked:hover {
+    background-color: #ccc;
+}
+
+.checked:active {
+    background-color: #6b6969;
+}
+
+.todo-item:hover {
+    background-color: #ccc;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.delete-btn:hover {
+    background-color: #470303;
+    color: rgb(252, 252, 252);
+}
+
+#button:hover {
+    color: #8f1010;
+    border-radius: 5%;
+}
